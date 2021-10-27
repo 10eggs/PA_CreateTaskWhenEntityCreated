@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Register xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/crm/2011/tools/pluginregistration">
+  <Solutions>
+    <Solution Assembly="CreateTaskWhenEntityCreated.CreateTaskWhenEntityCreated.dll" Id="ee2fe759-14e4-4298-8ca3-dd0a5f35b9f3" IsolationMode="Sandbox" SourceType="Database">
+      <PluginTypes>
+        <clear />
+        <Plugin Description="Plug-in to CreateTaskWhenCarCreated" FriendlyName="CreateTaskWhenCarCreated" Name="CreateTaskWhenEntityCreated.CreateTaskWhenEntityCreated.PostOperationcrd9a_carCreate" Id="1890eb47-0e09-4652-a7ef-e61522a964c4" TypeName="CreateTaskWhenEntityCreated.CreateTaskWhenEntityCreated.PostOperationcrd9a_carCreate">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="true" Name="CreateTaskWhenCarCreated" Description="Create task when car entity is created." Id="dbb68b85-242f-ec11-b6e5-000d3a5bb143" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="Create" Mode="Asynchronous" PrimaryEntityName="crd9a_car" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+            <Step AsyncAutoDelete="true" Name="CreateTaskWhenCarCreated" Description="Create of any Entity Task" Id="e3e0a22b-c82e-ec11-b6e5-000d3a5bb143" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="Create" Mode="Asynchronous" PrimaryEntityName="" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+        <Plugin Description="Plug-in to CreteTaskEntityWhenAccountCreated" FriendlyName="CreteTaskEntityWhenAccountCreated" Name="CreateTaskWhenEntityCreated.CreateTaskWhenEntityCreated.PostOperationaccountCreate" Id="629b71aa-3ae0-43de-ae8c-679ac17193ee" TypeName="CreateTaskWhenEntityCreated.CreateTaskWhenEntityCreated.PostOperationaccountCreate">
+          <Steps>
+            <clear />
+            <Step AsyncAutoDelete="true" Name="CreteTaskEntityWhenAccountCreated" Description="Task is created when account entity is created" Id="13577288-202f-ec11-b6e5-000d3a5bb143" ImpersonatingUserId="00000000-0000-0000-0000-000000000000" MessageName="Create" Mode="Asynchronous" PrimaryEntityName="account" Rank="1" Stage="PostOutsideTransaction" SupportedDeployment="ServerOnly" MessageEntityId="00000000-0000-0000-0000-000000000000">
+              <Images />
+            </Step>
+          </Steps>
+        </Plugin>
+      </PluginTypes>
+    </Solution>
+  </Solutions>
+  <XamlWorkflows />
+  <DataProviders />
+</Register>
